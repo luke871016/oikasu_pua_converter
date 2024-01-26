@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nan-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>烏衣行字體羅馬字私人使用區編碼替換工具</title>
+  </head>
+  <body>
+    <main>
+      <div class="app">
+        <h1>烏衣行字體羅馬字私人使用區編碼替換工具</h1>
+        <p>
+          這个工具會當共你所輸入的文字當中的羅馬字轉換做烏衣行字體的私人使用區編碼，貼去對臺文羅馬字支援真䆀的軟體當中就會當正常顯示羅馬字矣。
+        </p>
+        <div class="config">
+          <input type="checkbox" id="simple-mode" name="simple-mode" />
+          <label for="simple-mode">干焦轉換第八調、第九調、o͘、m佮ng</label>
+        </div>
+        <h2>標準Unicode編碼</h2>
+        <textarea name="" id="string-input" cols="30" rows="10">
+Loading ê時chūn不管選擇啥mih語言，下跤lóng ē顯示台文字「小等--一-下」，koh有廖添丁功夫ê號名，mā是全全用台語文顯示，阮用chit款方式chhui-sak hō͘平常時無teh注意台語文ê人。Che是kā台語chhui-sak--出-去ê手路。遊戲ê介面是全台文，電腦iah是遊戲ê名詞ài揣一寡朋友來討論、比較，kā老師請教了後，chiah來揀一个使用。譬論講：『遊戲手把、搖桿、手把』就翻譯做「手hōaⁿ仔」，『玩家』翻做「ī家」等等。字型字骨ê問題，親像金萱字型對台文lóng有支援；若是koh有字拍bē出--來，ē-sái揣一个叫做「豆腐字」ê字型，che是一个台中教育大學學生（編註：莊銘彥）ê畢業論文成果，ē-tàng免費使用。Chia--ê lóng是電腦台文字型ê解決方案。</textarea
+        >
+        <div class="button-panel">
+          <button id="transform-btn">↓標準 轉 PUA↓</button>
+          <button id="untransform-btn">↑PUA 轉 標準↑</button>
+        </div>
+        <h2>烏衣行私人使用區編碼</h2>
+        <textarea name="" id="string-output" cols="30" rows="10"></textarea>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
